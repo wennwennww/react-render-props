@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import SubmitBtn from './components/SubmitBtn';
+import CancelBtn from './components/CancelBtn';
+import ExportBtn from './components/ExportBtn';
+// import Btn from './components/Btn';
 
-function App() {
+const App = () => {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SubmitBtn />
+      <CancelBtn />
+      <ExportBtn />
+
+      {/* <Btn render={() => {
+        return <button>submit</button>
+      }} />
+      <Btn render={() => {
+        return <div style={{
+          width: 100,
+          height: 50,
+          display: 'flex',
+          justifyContent: 'center',
+          color: 'white',
+          backgroundColor: 'red',
+          alignItems: 'center',
+          cursor: 'pointer',
+        }}>Cancel</div>
+      }} />
+      <Btn render={() => {
+        return <button>export</button>
+      }} /> */}
     </div>
   );
 }
