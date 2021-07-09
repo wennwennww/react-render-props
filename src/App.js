@@ -1,36 +1,23 @@
 import React from 'react';
-import SubmitBtn from './components/SubmitBtn';
-import CancelBtn from './components/CancelBtn';
-import ExportBtn from './components/ExportBtn';
 // import Btn from './components/Btn';
+import ButtonClickAction from './components/ButtonClickAction';
+import ButtonMoveAction from './components/ButtonMoveAction';
+
 
 const App = () => {
 
-
   return (
     <div className="App">
-      <SubmitBtn />
-      <CancelBtn />
-      <ExportBtn />
+      <ButtonClickAction />
+      <ButtonMoveAction />
+      {/* <Btn render={(counter, setCounter) => {
+        return <button className="button--cancel" onClick={() => {setCounter((val)=>val+=1)}}>Btn clicks count: {counter}</button>
+      }} />
 
-      {/* <Btn render={() => {
-        return <button>submit</button>
-      }} />
-      <Btn render={() => {
-        return <div style={{
-          width: 100,
-          height: 50,
-          display: 'flex',
-          justifyContent: 'center',
-          color: 'white',
-          backgroundColor: 'red',
-          alignItems: 'center',
-          cursor: 'pointer',
-        }}>Cancel</div>
-      }} />
-      <Btn render={() => {
-        return <button>export</button>
+      <Btn render={(counter, setCounter) => {
+        return <button className="button--accept" onMouseOut={() => {setCounter((val)=>val+=1)}}>Mouse out count: {counter}</button>
       }} /> */}
+     
     </div>
   );
 }
