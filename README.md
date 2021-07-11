@@ -8,4 +8,5 @@
 #### render props的缺點
 
 - 使用起來比較繁瑣，HOC使⽤通常⼀⾏代碼就可以重複使用，ex: `hoc(component`)，Render Props做不到那麼簡單
+- 個人覺得追code會很難追
 - etc...
